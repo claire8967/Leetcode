@@ -27,9 +27,9 @@ public:
         while(current!=NULL){
             if(i%k==0){
                 prev = reverse(prev,current->next);
-                current = current -> next;
-            }else{
                 current = prev -> next;
+            }else{
+                current = current -> next;
             }
             i++;    
         }
